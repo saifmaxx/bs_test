@@ -63,7 +63,7 @@ Class Oopclass{
                   //exit; */
                 if ($row->count_row > 0) {
                     $html .= '<li><span>&nbsp; ' . $row->Name .'-'.$row->count_row. '</span>';
-                    echo $this->display_children($row->Id, $level + 1);
+                    $html .=  $this->display_children($row->categoryId, $level + 1);
                     $html .= "</li>";
                 } else {
                     $html .= '<li><span>&nbsp;' . $row->Name .'-'.$row->count_row. '</span>';

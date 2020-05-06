@@ -62,11 +62,11 @@ Class Oopclass{
                   print_r($row);
                   //exit; */
                 if ($row->count_row > 0) {
-                    $html .= '<li><span>&nbsp; ' . $row->Name .'-'.$row->count_row. '</span>';
+                    $html .= '<li><span>&nbsp; ' . $row->Name. '</span>';
                     $html .=  $this->display_children($row->categoryId, $level + 1);
                     $html .= "</li>";
                 } else {
-                    $html .= '<li><span>&nbsp;' . $row->Name .'-'.$row->count_row. '</span>';
+                    $html .= '<li><span>&nbsp;' . $row->Name. '</span>';
                     $html .= "</li>";
                 }
             }
